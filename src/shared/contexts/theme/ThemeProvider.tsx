@@ -1,5 +1,5 @@
-import { LS_THEME_KEY, Theme, ThemeContext } from "./ThemeContext";
-import { FC, useMemo, useState } from "react";
+import { FC, useMemo, useState } from "react"
+import { LS_THEME_KEY, Theme, ThemeContext } from "./ThemeContext"
 
 const ThemeProvider: FC = ({ children }) => {
   const defaultTheme = localStorage.getItem(LS_THEME_KEY) as Theme || Theme.LIGHT

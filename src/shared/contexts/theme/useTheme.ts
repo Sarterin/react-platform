@@ -1,6 +1,6 @@
-import { useContext } from "react";
-import { LS_THEME_KEY, Theme, ThemeContext } from "./ThemeContext";
-import { ThemeResult } from "./Theme.types";
+import { useContext } from "react"
+import { LS_THEME_KEY, Theme, ThemeContext } from "./ThemeContext"
+import { ThemeResult } from "./Theme.types"
 
 export function useTheme(): ThemeResult {
   const { theme, setTheme } = useContext(ThemeContext)
