@@ -1,4 +1,4 @@
-import { Theme } from "./ThemeContext"
+import type { Theme } from './ThemeContext'
 
 export interface ThemeContextProps {
   theme?: Theme

@@ -1,5 +1,5 @@
-import { createContext } from "react"
-import { ThemeContextProps } from "./Theme.types"
+import { createContext } from 'react'
+import type { ThemeContextProps } from './Theme.types'
 
 export enum Theme {
   LIGHT = 'light',

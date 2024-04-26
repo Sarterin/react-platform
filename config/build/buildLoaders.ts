@@ -1,9 +1,8 @@
-import { RuleSetRule } from "webpack"
-import MiniCssExtractPlugin from "mini-css-extract-plugin"
-import { BuildOptions } from "./types/config"
+import MiniCssExtractPlugin from 'mini-css-extract-plugin'
+import type { RuleSetRule } from 'webpack'
+import type { BuildOptions } from './types/config'
 
-export function buildLoaders({ isDev }: BuildOptions): RuleSetRule[] {
-
+export function buildLoaders ({ isDev }: BuildOptions): RuleSetRule[] {
   const fileLoader = {
     test: /\.(png|jpe?g|gif|woff|woff2)$/i,
     use: [
@@ -29,7 +28,7 @@ export function buildLoaders({ isDev }: BuildOptions): RuleSetRule[] {
           modules: {
             auto: true,
             localIdentName: isDev ? '[path][name]__[local]' : '[hash:base64:8]'
-          },
+          }
         }
       },
       'sass-loader'

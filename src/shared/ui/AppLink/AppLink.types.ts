@@ -1,4 +1,4 @@
-import { LinkProps } from "react-router-dom"
+import { type LinkProps } from 'react-router-dom'
 
 export enum AppLinkTheme {
   PRIMARY = 'primary',

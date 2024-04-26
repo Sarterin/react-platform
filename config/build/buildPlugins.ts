@@ -1,9 +1,9 @@
-import HTMLWebpackPlugin from "html-webpack-plugin"
-import MiniCssExtractPlugin from "mini-css-extract-plugin"
-import { WebpackPluginInstance, ProgressPlugin, DefinePlugin, HotModuleReplacementPlugin } from "webpack"
-import type { BuildOptions } from "./types/config"
+import HTMLWebpackPlugin from 'html-webpack-plugin'
+import MiniCssExtractPlugin from 'mini-css-extract-plugin'
+import { type WebpackPluginInstance, ProgressPlugin, DefinePlugin, HotModuleReplacementPlugin } from 'webpack'
+import type { BuildOptions } from './types/config'
 
-export function buildPlugins({paths, isDev}: BuildOptions): WebpackPluginInstance[] {
+export function buildPlugins ({ paths, isDev }: BuildOptions): WebpackPluginInstance[] {
   return [
     new HTMLWebpackPlugin({
       template: paths.html
